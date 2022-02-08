@@ -16,13 +16,13 @@ directories = []
 
 # Read directories from arguments
 if len(sys.argv) < 2:
-    print("Podaj katalog")
+    print("Give at least one directory")
 
     exit()
 else:
     for directory in sys.argv[1:]:
         if not os.path.exists(directory):
-            print("Nieprawidłowy katalog")
+            print("One of given directories is invalid")
             
             exit()
         else:
